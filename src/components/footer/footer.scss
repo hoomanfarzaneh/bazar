@@ -1,0 +1,64 @@
+@import "../../app.scss";
+.footer{
+    font-size: 12px;
+    margin-top: 40px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgb(0,0,0,0.47); 
+    box-shadow: 2px 4px 10px 1px rgb(201,201,201,0.47);
+
+    @include tablet{
+        display: none;
+      }
+    
+    .fContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1024px;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 10px;
+
+        @include tablet{
+            width: 90%;
+          }
+
+        .fLists{
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            flex: 3;
+        
+            .fList{
+                list-style: none;
+                padding: 0;
+                margin-top: 20px;
+    
+                .fListItem{
+                    color: gray;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .fLogo{
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 40px;
+        }
+    }
+
+    .fText{
+        max-width: 1024px;
+        margin: auto;
+        text-align: right;
+        font-size: 10px;
+        color: gray;
+
+        @include tablet{
+            width: 90%;
+          }
+    }
+}

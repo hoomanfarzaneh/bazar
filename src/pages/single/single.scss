@@ -1,0 +1,342 @@
+@import "../../app.scss";
+.single{
+    
+    .singleTitle{
+        direction: rtl;
+        border: 1px solid rgb(231, 229, 229);
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1024px;
+        margin: auto;
+        margin-top: 20px;
+        background-color: white;
+
+        @include tablet{
+            width: 95%;
+        }
+
+        .iconTitle{
+            margin-right: 10px;
+            color: rgb(231, 229, 229);
+        }
+        
+        p{
+            font-size: 14px;
+            text-align: right;
+            margin-right: 20px;
+            color: rgb(170, 170, 170);
+        }
+    }
+
+    .wrapper{
+        display: flex;
+        width: 100%;
+        max-width: 1024px;
+        padding: 10px;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 20px;
+        direction: rtl;
+
+        @include tablet{
+            width: 95%;
+            flex-wrap: wrap;
+            margin-top: 0;
+        }
+
+        .rSide{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding-left: 20px;
+            
+
+            @include tablet{
+                width: 95%;
+                margin: auto;
+                padding: 0;
+            }
+
+            .rIntro{
+                border: 1px solid rgb(231, 229, 229);
+                border-radius: 5px;
+                text-align: right;
+                padding: 10px;
+                padding-left: 20px;
+
+                @include tablet{
+                    margin-top: 20px;
+                }
+
+                .rHeader{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    @include mobile{
+                        flex-wrap: wrap;
+                    }
+    
+                    .rTitle{
+    
+                        h1{
+                            font-size: 16px;
+                            margin-bottom: 5px;
+                        }
+        
+                        h2{
+                            font-size: 12px;
+                            margin-bottom: 5px;
+                            font-weight: 400;
+                        }
+        
+                        h3{
+                            font-size: 10px;
+                            color: gray;
+                            font-weight: 400;
+                        }
+                    }
+    
+                   button{
+                        background-color: rgb(13, 160, 91);
+                        color: white;
+                        padding: 8px 20px;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+
+                        @include mobile{
+                            width: 80%;
+                            margin: auto;
+                            margin-bottom: 10px;
+                        }
+                   }
+                }
+
+                .rDetails{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .rDetailsCount{
+                        padding-right: 20px;
+                        text-align: center;
+                        p{
+                            font-size: 12px;
+                        }
+
+                        span{
+                            font-size: 10px;
+                            color: gray;
+                        }
+                    }
+                }
+            }
+
+            .gallery{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid rgb(231, 229, 229);
+                border-radius: 5px; 
+                margin-top: 20px;
+
+
+                .galleryTitle{
+                    padding: 10px;
+                    font-size: 14px;
+                    border-bottom: 1px solid rgb(231, 229, 229);
+                }
+
+                .galleryPic{
+                    width: 100%;
+                }
+            }
+
+            .download{
+                display: flex;
+                border: 1px solid rgb(231, 229, 229);
+                border-radius: 5px; 
+                margin-top: 20px;
+                align-items: center;
+                padding: 10px 0px;
+                justify-content: space-around;
+                
+                .downloadDesc{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
+
+                    h3{
+                        font-size: 14px;
+                    }
+
+                    h4{
+                        margin-top: 10px;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+
+                    .downloadButton{
+                            margin-top: 15px;
+                        button{
+                            color: white;
+                            background-color: rgb(13, 160, 91);
+                            border: none;
+                            outline: none;
+                            border-radius: 5px;
+                            padding: 5px 10px;
+                            margin-right: 5px;
+
+                            @include mobile{
+                                width: 90%;
+                                margin: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .lSide{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            direction: rtl;
+
+            @include tablet{
+                width: 95%;
+                margin: auto;
+                margin-top: 20px;
+            }
+
+           .intro{
+                border: 1px solid rgb(231, 229, 229);
+                border-radius: 5px;
+                text-align: right;
+                padding: 10px;
+                background-color: white;
+
+
+                .introDesc{
+                    font-size: 13px;
+                    display: block;
+                    margin-top: 10px;
+                    padding: 10px;
+                    width: 100%;
+                    height: 200px;
+                    overflow-y: scroll;
+                    direction: rtl;
+
+                    p{
+                        padding: 10px;
+                        text-align: justify;
+                    }
+                }
+           }
+
+           .opinion{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid rgb(231, 229, 229);
+                background-color: white;
+                border-radius: 5px;
+                margin-top: 20px;
+
+                .opTitle{
+                    display: flex;
+                    justify-content: space-between;
+                    direction: rtl;
+                    font-size: 12px;
+                    padding: 10px;
+
+                    .rate{
+                        display: flex;
+                        align-items: center;
+
+                        .iconStar{
+                            padding-left: 5px;
+                            color: rgb(13, 160, 91);
+                        }
+                    }
+                }
+
+                .opBody{
+                    display: flex;
+                    flex-direction: column;
+                    direction: rtl;
+                    margin: 10px;
+
+                    .opScore{
+                        display: flex;
+                        align-items: center;
+                        color: gray;
+
+                        p{
+                            padding: 4px;
+                            font-size: 14px;
+                        }
+
+                        .opIconBody{
+                            font-size: 10px;
+                        }
+
+                        .opRating{
+                            height: 8px;
+                            width: 120px;
+                            background-color: rgb(13, 160, 91);
+                            border-radius: 8px;
+                        }
+                    }
+                      
+                    .avatar{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+
+                        .avatarIcon{
+                            border: 1px solid rgb(184, 182, 182);
+                            border-radius: 50px;
+                            padding: 8px;
+                            color: gray;
+                        }
+                        
+                        p{
+                            color: gray;
+                            font-size: 14px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .rate{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 5px;
+
+                        .star{
+                            font-size: 12px;
+                            color: rgb(13, 160, 91);
+                        }
+
+                        p{
+                            font-size: 12px;
+                            color: gray;
+                        }
+                    }
+
+                    .opDesc{
+                        margin-top: 10px;
+                        font-size: 12px;
+                    }
+                }
+           }
+        }
+    }
+    .list{
+        overflow: hidden;
+        .sliderArrow {
+            margin-right: 20px;
+        }
+    }
+}

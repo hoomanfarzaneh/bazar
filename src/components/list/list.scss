@@ -1,0 +1,79 @@
+@import "../../app.scss";
+.list{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+    border: 1px solid rgb(231, 229, 229);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+
+    @include tablet{
+      width: 88%;
+    }
+
+    .title{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        border-bottom: 1px solid rgb(231, 229, 229);
+        direction: rtl;
+        
+
+        p{
+            margin-bottom: 10px;
+        }
+
+        .lSide{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        overflow: hidden;
+       
+        .sliderArrow {
+          width: 30px;
+          height: 40%;
+          background-color: rgb(22, 22, 22, 0.5);
+          color: white;
+          position: absolute;
+          z-index: 9;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          cursor: pointer;
+    
+          &.left {
+            left: 0;
+          }
+    
+          &.right {
+            right: 0;
+
+            @include tablet{
+             margin-right: 0;
+             }
+          }
+        }
+        .container {
+          display: flex;
+          width: max-content;
+          transform: translateX(0px);
+          transition: all 1s ease;
+        }
+    }
+}

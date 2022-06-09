@@ -1,0 +1,128 @@
+@import "../../app.scss";
+.home{
+    
+    @include tablet{
+        overflow: hidden;
+      }
+    .homeTitle{
+        border: 1px solid rgb(231, 229, 229);
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        max-width: 1024px;
+        margin: auto;
+        margin-top: 20px;
+        background-color: white;
+
+        @include tablet{
+            display: none;
+          }
+        
+        p{
+            font-size: 14px;
+            text-align: right;
+        }
+    }
+
+    .properties{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        max-width: 1024px;
+        border: 1px solid rgb(231, 229, 229);
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: white;
+
+        @include tablet{
+            width: 90%;
+          }
+    
+        .title{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+            border-bottom: 1px solid rgb(231, 229, 229);
+    
+            p{
+                margin-bottom: 10px;
+            }
+    
+            .lSide{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 10px;
+    
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+           
+
+            .body{
+                width: 25%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid rgb(231, 229, 229);
+                border-radius: 5px;
+                margin: 10px;
+                padding: 10px;
+                background-color: rgb(249, 250, 253);
+
+                @include mobile{
+                    width: 100%;
+                  }
+
+                .rightBody{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: rgb(72, 69, 69);
+                }
+
+            }
+        }
+    }
+
+    .paragraph{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1024px;
+        margin: auto;
+        border: 1px solid rgb(231, 229, 229);
+        padding: 10px;
+        margin-top: 20px;
+        text-align: right;
+        font-size: 14px;
+
+        @include tablet{
+            width: 90%;
+        }
+
+        @include mobile{
+            border: none;
+        }
+
+        p,b{
+            margin-top: 10px;
+        }
+    }
+}
